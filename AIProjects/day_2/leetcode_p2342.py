@@ -7,6 +7,7 @@ def maximumSum(nums: list[int]) -> int:
         for num in nums:
             this_sum = sum(int(digit) for digit in str(num))  # Compute digit sum
             
+            print (sum_to_max)
             if this_sum in sum_to_max:  # If another num with same digit sum exists
                 max_sum = max(max_sum, sum_to_max[this_sum] + num)  # Update max pair sum
             
