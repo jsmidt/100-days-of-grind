@@ -13,6 +13,9 @@ dependencies = [
     "langchain-ollama>=0.2.3",
     "langgraph>=0.2.70",
     "protobuf>=5.29.3",
+    "pydantic>=2.10.6",
+    "pydantic-ai>=0.0.24",
+    "streamlit>=1.42.0",
     "torch>=2.6.0",
     "transformers>=4.48.3",
 ]

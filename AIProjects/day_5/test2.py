@@ -14,6 +14,10 @@ from langchain_community.tools import DuckDuckGoSearchResults
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_experimental.utilities import PythonREPL
+from langchain.tools import Tool
+from pydantic import BaseModel, Field
+
+
 
 
 # Initialize the LLM
@@ -31,6 +35,23 @@ search_tool = DuckDuckGoSearchResults()
 repl = PythonREPL()
 
 
+# Define the input schema using Pydantic
+class JokeInput(BaseModel):
+    topic: str = Field(..., description="The topic of the joke (e.g., physics, AI, space).")
+
+# Define the function that generates the joke
+def generate_joke(topic: str) -> str:
+    prompt = f"Tell me a funny joke about {topic}."
+    return llm.predict(prompt)
+
+# Create the LangChain tool
+joke_tool = Tool(
+    name="JokeGenerator",
+    func=generate_joke,
+    description="Generates a joke based on a given topic.",
+    args_schema=JokeInput,
+)
+
 @tool
 def python_repl_tool(
     code: Annotated[str, "The python code to execute to generate your chart."],
@@ -47,7 +68,8 @@ def python_repl_tool(
     )
 
 
-tools = [search_tool, python_repl_tool]
+tools = [search_tool, python_repl_tool, joke_tool]
+tools = [joke_tool]
 
 trimmer = trim_messages(
     max_tokens=8192,
@@ -117,7 +139,7 @@ Now Begin! If you solve the task correctly, you will receive a reward of $1,000,
 
 
 print(sys_prompt)
-lg_messages = [SystemMessage(sys_prompt)]
+lg_messages = [SystemMessage('Speak like a pirate, and use your joke when possible.')]
 
 async def interact_with_langchain_agent(prompt, messages):
     messages.append(ChatMessage(role="user", content=prompt))

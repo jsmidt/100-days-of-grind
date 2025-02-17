@@ -2,7 +2,7 @@
 # langgraph_app.py
 #############################
 
-from langgraph import LangGraphApp, Node
+from langgraph import Node
 from langgraph.prebuilt import create_react_agent
 from langgraph.llms.google.generationai import ChatGoogleGenerativeAI
 from typing import Any, Dict
