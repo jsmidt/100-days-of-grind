@@ -3,16 +3,8 @@ import asyncio
 from gradio import ChatMessage
 import gradio as gr
 from pydantic_ai.messages import (
-    ModelMessage,
-    ModelRequest,
     ModelResponse,
-    SystemPromptPart,
-    UserPromptPart,
     TextPart,
-    ToolCallPart,
-    ToolReturnPart,
-    RetryPromptPart,
-    ModelMessagesTypeAdapter
 )
 
 agent = Agent('google-gla:gemini-1.5-flash',system_prompt='Be a helpful assistant who responds like a pirate.')
