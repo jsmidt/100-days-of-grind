@@ -5,10 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = "==3.12.9"
 dependencies = [
-    "crawl4ai>=0.4.248",
     "duckduckgo-search>=7.3.2",
     "google-genai>=1.2.0",
     "google-generativeai>=0.8.4",
+    "gradio>=5.0",
     "huggingface-hub>=0.28.1",
     "jupyter>=1.1.1",
     "langchain-community>=0.3.17",
@@ -16,9 +16,12 @@ dependencies = [
     "llama-index>=0.12.18",
     "llama-index-core>=0.12.18",
     "llama-index-llms-gemini>=0.4.10",
+    "llama-index-tools-code-interpreter>=0.3.0",
     "llama-index-utils-workflow>=0.3.0",
+    "matplotlib>=3.10.0",
     "playwright>=1.50.0",
     "pydantic-ai>=0.0.24",
     "supabase>=2.13.0",
+    "tavily-python>=0.5.1",
     "torch>=2.6.0",
 ]
