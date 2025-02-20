@@ -845,7 +845,7 @@ wheels = [
 
 [[package]]
 name = "gradio"
-version = "5.16.1"
+version = "5.16.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiofiles" },
@@ -877,12 +877,12 @@ dependencies = [
     { name = "uvicorn", marker = "sys_platform != 'emscripten'" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/b6/2e/3dddfdec4144ef1c2203e3ce3a2112720e757996995cdd579aaedc0876bf/gradio-5.16.1-py3-none-any.whl", hash = "sha256:a49f194ca314a09e4f7655a8fbcf8efae961a2bbf37877afc546fb506027f4dd", size = 62213705 },
+    { url = "https://files.pythonhosted.org/packages/3a/1b/bd78e5d128589f28dfe76ddd587702489fabb58bdd3fbc6d09b16e5d948a/gradio-5.16.2-py3-none-any.whl", hash = "sha256:b13180c9a0a7370bdda6a326d85f659768ba97a822a7d5790b52ae4c6bccc343", size = 62206160 },
 ]
 
 [[package]]
 name = "gradio-client"
-version = "1.7.0"
+version = "1.7.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fsspec" },
@@ -892,9 +892,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/c5/78/e5a4a2b0f4d1ba01ec4169e181a3134fc65b6360d40817070892c3557000/gradio_client-1.7.0.tar.gz", hash = "sha256:87f6ade197951f38bac0431b2a436a8ebb2f33b2ceba2ef8e1e5bef8d8b238e4", size = 320039 }
+sdist = { url = "https://files.pythonhosted.org/packages/f2/98/434f4eff6eabf625e71ac69a5909864984b53b2f2c9e3a9c772bebbfae84/gradio_client-1.7.1.tar.gz", hash = "sha256:6ecd3a537c6c076cb1b351c2d7ce5906070d2e1b3181163609bfa4a4c4f3040e", size = 320142 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f3/c1/def2bd93b8beab342c443bf5ac47f85e48b78eca010bbff51d6978472a3f/gradio_client-1.7.0-py3-none-any.whl", hash = "sha256:b403570c67f121ebbbc19ac1f0afa2ab1bab085ce60d96eb190832fe871aa946", size = 321900 },
+    { url = "https://files.pythonhosted.org/packages/16/52/4fe9dfc2239e7b748ad8dc3b80ad8755f5c9378432715193586c3ab74bf9/gradio_client-1.7.1-py3-none-any.whl", hash = "sha256:d7737bc473a2093549c06004379c42f0a3510a98095cf7cea9033837e252149f", size = 321994 },
 ]
 
 [[package]]
@@ -1560,7 +1560,7 @@ wheels = [
 
 [[package]]
 name = "langchain-community"
-version = "0.3.17"
+version = "0.3.18"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -1576,14 +1576,14 @@ dependencies = [
     { name = "sqlalchemy" },
     { name = "tenacity" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0a/e6/03df441525516f351a56aa2f156c8636daa4849f479032706680d8121e86/langchain_community-0.3.17.tar.gz", hash = "sha256:d8547a3d4f8307950be88ca638cd6ab1abe2440d0012e401a172ba4a39aa8044", size = 33213782 }
+sdist = { url = "https://files.pythonhosted.org/packages/93/5f/0d81b0299bb8dc797dfc42ed19e7410bfab799eb25107dda5cdf5f703515/langchain_community-0.3.18.tar.gz", hash = "sha256:fa2889a8f0b2d22b5c306fd1b070c0970e1f11b604bf55fad2f4a1d0bf68a077", size = 33216713 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7e/31/39c30cab465774835e2c18d3746587e6fd0c9f7265b1c6b1fcd2e1684dd2/langchain_community-0.3.17-py3-none-any.whl", hash = "sha256:13bbd87d681b0df67bafa294321613b13ac524f173c92f11048d40c74e585f0b", size = 2516904 },
+    { url = "https://files.pythonhosted.org/packages/f7/95/8e0c46842040e58fc252d82bcddc7d02e1e874aad98fdf729d25978c09ae/langchain_community-0.3.18-py3-none-any.whl", hash = "sha256:0d4a70144a1750045c4f726f9a43379ed2484178f76e4b8295bcef3a7fdf41d5", size = 2520606 },
 ]
 
 [[package]]
 name = "langchain-core"
-version = "0.3.36"
+version = "0.3.37"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jsonpatch" },
@@ -1594,9 +1594,9 @@ dependencies = [
     { name = "tenacity" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e2/41/e638f46eb7037fd8aab3484d9c109d0f30a04ac4bbd3e283dcfc80a31309/langchain_core-0.3.36.tar.gz", hash = "sha256:dffdce8a554905f53f33c1d6a40633a45a8d47c17c5792753891dd73941cd57a", size = 526843 }
+sdist = { url = "https://files.pythonhosted.org/packages/86/1d/692541c2ff9d8d7c847638f1244bddbb773c984fbfbe1728ad5f100222b7/langchain_core-0.3.37.tar.gz", hash = "sha256:cda8786e616caa2f68f7cc9e811b9b50e3b63fb2094333318b348e5961a7ea01", size = 527209 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d3/06/b764bcf5523c271a35005ba7047f6d216337e598b41a1f2783a99a11f5d6/langchain_core-0.3.36-py3-none-any.whl", hash = "sha256:8410311862c7c674e4f3f120cfd8d1f3d003d6e7d8cb8f934746e222f7e865d9", size = 413640 },
+    { url = "https://files.pythonhosted.org/packages/6a/f5/9ce2a94bc49b64c0bf53b17524d5fc5c926070e911b11d489979d47d5491/langchain_core-0.3.37-py3-none-any.whl", hash = "sha256:8202fd6506ce139a3a1b1c4c3006216b1c7fffa40bdd1779f7d2c67f75eb5f79", size = 413717 },
 ]
 
 [[package]]
@@ -1643,16 +1643,16 @@ wheels = [
 
 [[package]]
 name = "llama-cloud"
-version = "0.1.12"
+version = "0.1.13"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "certifi" },
     { name = "httpx" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/3c/d0/824dac947086820406c3f13e95edbb7426611ab88ecc5d572a838c3e878a/llama_cloud-0.1.12.tar.gz", hash = "sha256:d51d26cc4c542398a3490813bc791f7504a40298225e62ed918951bf57266e2a", size = 94069 }
+sdist = { url = "https://files.pythonhosted.org/packages/fd/01/5871921d95644931f6f8e23e10ab2367fd342427f8d50c189a2f960b3ef4/llama_cloud-0.1.13.tar.gz", hash = "sha256:cb6522fbd0f5e4c1cd2825e70bb943d0d8916816e232a5ce3be3a7272f329a8c", size = 94108 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4e/43/5ec353491f7e6c5e588ccab5fbfb551b491d036409f39a2a038e89d84b49/llama_cloud-0.1.12-py3-none-any.whl", hash = "sha256:de1b4f89afc3cf3adf86ca9a6eb2b8de3f131b20fd25a5647b5a162e6bf2ed1b", size = 252988 },
+    { url = "https://files.pythonhosted.org/packages/ed/e8/e9c47f623a3bd152d47e970ca2647f0080dbdc406153ce21533fad44a575/llama_cloud-0.1.13-py3-none-any.whl", hash = "sha256:c36d9e9288cb7298faae68797f9789615b7c72409af8f3315e3098a479c09e17", size = 253383 },
 ]
 
 [[package]]
@@ -1917,11 +1917,11 @@ wheels = [
 
 [[package]]
 name = "logfire-api"
-version = "3.6.0"
+version = "3.6.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/1b/ca/c18452d6c5550427e1d88e2c69d0aade343fb44c89cc10b35474f9fc7ceb/logfire_api-3.6.0.tar.gz", hash = "sha256:35123d788625f41555fa78d516d3bc45ffaa3fd57181b6188708a3c77311a1f4", size = 45239 }
+sdist = { url = "https://files.pythonhosted.org/packages/9d/e7/2e1c4c19e5e044cdf527e474349de662beb770ec9b4e22850a7310511833/logfire_api-3.6.1.tar.gz", hash = "sha256:37fd40bf3b26f9740345cc7a56870f8a20f9c18cd185b713d3b61c2f07662e8d", size = 45238 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fc/87/84a4aa9ed8e6de5fcc08dc500f81303ed13bb6f727e48a0eacd100e6591f/logfire_api-3.6.0-py3-none-any.whl", hash = "sha256:71d90148655c03f7616810cc58198261d0cb7c9185ac8d300f77561e39019056", size = 74998 },
+    { url = "https://files.pythonhosted.org/packages/39/60/ab7908b47e8722d7dfd554eee81fb05f4e1b28288592e9054aece40e28b0/logfire_api-3.6.1-py3-none-any.whl", hash = "sha256:b729981a28415de71c574536c6c53e6e801a7108f5d9f6615f152762ac66f684", size = 74998 },
 ]
 
 [[package]]
