@@ -1,0 +1,10 @@
+site_name: Hello UV
+theme:
+  name: "material"
+
+nav:
+  - Home: index.md
+  - API Reference: api.md
+
+plugins:
+  - search

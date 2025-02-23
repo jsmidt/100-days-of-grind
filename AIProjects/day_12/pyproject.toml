@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hello-uv"
+version = "0.1.0"
+description = "A minimal example Python package managed with uv."
+authors = [{ name = "Your Name", email = "you@example.com" }]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "build>=1.2.2.post1",
+    "pytest>=8.3.4",
+]
+
+[tool.setuptools]
+packages = ["hello_uv"]
+package-dir = {"" = "src"}  # Tell setuptools to look inside src/
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+
+
+[project.scripts]
+hello-uv = "hello_uv.main:hello"
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N"]
+ignore = ["E501"]  # Ignore line too long errors if using Black
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+strict = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
