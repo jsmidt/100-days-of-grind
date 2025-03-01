@@ -23,7 +23,9 @@ dependencies = [
     "matplotlib>=3.10.0",
     "playwright>=1.50.0",
     "pydantic-ai>=0.0.24",
+    "streamlit>=1.42.2",
     "supabase>=2.13.0",
     "tavily-python>=0.5.1",
     "torch>=2.6.0",
+    "watchdog>=6.0.0",
 ]
