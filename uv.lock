@@ -21,6 +21,7 @@ dependencies = [
     { name = "llama-index-core" },
     { name = "llama-index-llms-gemini" },
     { name = "llama-index-tools-code-interpreter" },
+    { name = "llama-index-tools-tavily-research" },
     { name = "llama-index-utils-workflow" },
     { name = "matplotlib" },
     { name = "playwright" },
@@ -48,6 +49,7 @@ requires-dist = [
     { name = "llama-index-core", specifier = ">=0.12.18" },
     { name = "llama-index-llms-gemini", specifier = ">=0.4.10" },
     { name = "llama-index-tools-code-interpreter", specifier = ">=0.3.0" },
+    { name = "llama-index-tools-tavily-research", specifier = ">=0.3.0" },
     { name = "llama-index-utils-workflow", specifier = ">=0.3.0" },
     { name = "matplotlib", specifier = ">=3.10.0" },
     { name = "playwright", specifier = ">=1.50.0" },
@@ -1980,6 +1982,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/24/32/7fa57ab18b736cca96729d28d227a8ccb82cd6be95660d3d7dd476df7a10/llama_index_tools_code_interpreter-0.3.0.tar.gz", hash = "sha256:3c373e285e86ccf529a4630688ab55ea1a026e74666cfa911762fa4eb85b5ee6", size = 2402 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cb/00/652db9f35b63c31aceb16ac80cc3d0283c3df3eee9ad3c531bde72d7d15e/llama_index_tools_code_interpreter-0.3.0-py3-none-any.whl", hash = "sha256:1750f37a7552271c4ddb81bc3feb775117e8d552431b4e6326af6abbc5e5466b", size = 2869 },
+]
+
+[[package]]
+name = "llama-index-tools-tavily-research"
+version = "0.3.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "llama-index-core" },
+    { name = "tavily-python" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4f/3b/fb5cf7d5fed4902829200af9b4b7cfce6676d9f8442cd542e2066944a59d/llama_index_tools_tavily_research-0.3.0.tar.gz", hash = "sha256:2b6fb6823684a63696f70fef01f13a6096068a48088f5fb95eba4919d7ca6b7f", size = 3085 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f7/07/9aa94120bf066ecbd5819ad5fac340968d4352c324a4f0d37587f9d1bdae/llama_index_tools_tavily_research-0.3.0-py3-none-any.whl", hash = "sha256:0fb973d56e98b3d7289e7dbedf28e687b7ada8949e67dfca7bfb468bd4ea5dbd", size = 3338 },
 ]
 
 [[package]]
